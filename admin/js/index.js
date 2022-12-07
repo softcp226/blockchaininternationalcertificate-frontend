@@ -15,11 +15,14 @@ function setCookie(admin, token) {
 const handle_admin_login = async (form) => {
   document.querySelector("#submit").innerHTML = "proccessing...";
   try {
-    const response = await fetch("/api/admin/login", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    const response = await fetch(
+      "https://blockchaininternationalexchange.glitch.me/api/admin/login",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(form),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {
