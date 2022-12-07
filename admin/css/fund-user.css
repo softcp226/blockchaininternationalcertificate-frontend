@@ -1,0 +1,126 @@
+.input-container {
+  box-shadow: 0 3px 15px rgb(0 0 0 / 5%);
+  text-align: center;
+  width: unset;
+  max-width: unset;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.b-p {
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+}
+.p-sm {
+  color: #000;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.l-input {
+  width: 75%;
+}
+
+.w-m {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 20px;
+}
+.smp-sm {
+  text-align: left;
+  padding: 15px;
+  opacity: 0.7;
+}
+@media (max-width: 750px) {
+  .input-container {
+    box-shadow: 0 3px 15px rgb(0 0 0 / 5%);
+    text-align: center;
+    width: 98vw;
+    max-width: 98vw;
+    overflow-x: hidden;
+    margin: auto;
+  }
+  .w-m {
+    margin: 10px;
+    padding-top: 40px;
+  }
+  input,
+  select {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 14px;
+    border: 1px solid #c4cad2;
+    box-shadow: 2px 6px 15px 0 rgba(116, 115, 118, 0.02);
+    font-size: 17px;
+    margin-top: 20px;
+    width: 90vw;
+    /* height: 70px; */
+    text-align: left;
+  }
+  textarea {
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 8px;
+    margin-top: 14px;
+    border: 1px solid #c4cad2;
+    box-shadow: 2px 6px 15px 0 rgba(116, 115, 118, 0.02);
+    font-size: 17px;
+    margin-top: 20px;
+    width: 90vw;
+    height: 70px;
+    text-align: left;
+  }
+  .l-input {
+    width: 89vw;
+  }
+}
+
+@media (min-width: 750px) {
+  /* main{
+    top: -30px;
+  } */
+  .input-container {
+    box-shadow: 0 3px 15px rgb(0 0 0 / 5%);
+    text-align: center;
+    width: unset;
+    max-width: unset;
+    overflow-x: hidden;
+    margin: auto;
+  }
+
+  input,
+  select {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 14px;
+    /* border: 3px solid #f4f9ff; */
+    border: 1px solid #c4cad2;
+
+    box-shadow: 2px 6px 15px 0 rgba(116, 115, 118, 0.02);
+    font-size: 17px;
+    margin-top: 20px;
+    width: 38%;
+  }
+  textarea {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 14px;
+    /* border: 3px solid #f4f9ff; */
+    border: 1px solid #c4cad2;
+
+    box-shadow: 2px 6px 15px 0 rgba(116, 115, 118, 0.02);
+    font-size: 17px;
+    margin-top: 20px;
+    height: 75px;
+  }
+  /* .l-input {
+    width: 60vw;
+  } */
+}

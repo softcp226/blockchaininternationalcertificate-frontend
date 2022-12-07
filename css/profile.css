@@ -1,0 +1,53 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  left: 10vw;
+}
+.user-profile-container,.user-password-container{
+        width: 415px;
+    /* max-width: 30vw; */
+    height: 350px;
+    position: relative;
+    left: 0vw;
+    background-color: #fff;
+    position: relative;
+    top: 28px;
+    margin: 8px;
+    text-align: center;
+    /* margin: auto; */
+    
+}
+
+@media (max-width:699px) {
+    main{
+        left: 0px;
+    }
+ .user-profile-container,.user-password-container{
+   width: 90vw; 
+ }
+
+}
+
+@media (min-width:699px) {
+    main {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  left: 10vw; 
+  flex-direction: column;
+}
+}
+
+@media (min-width:1000px) {
+    main {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  left: 10vw; */
+  flex-direction: row;
+}
+}

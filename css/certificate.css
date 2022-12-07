@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.canvas_div_pdf {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.bg-container {
+  background-color: rgb(20, 70, 153);
+  width: 40%;
+  height: 100vh;
+  
+}
+.no-bg-container{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+.tt-sm-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+top: 10%;
+position: relative;
+}
+.blockchain-logo{
+    height: 100px;
+}
+.tt-txt-sm{
+    font-weight: 500;
+    color: #fff;
+line-height: 0px;
+}
+.tt-txt-sm-b{
+     font-weight: 600;
+    color: #fff;
+}
+.btc-sm-bg{
+  
+
+width: 85%;
+}
+.btc-sm-bg-container{
+    text-align: center;
+    position: relative;
+  top: 20%;
+}
+.cert-badge{
+    position: absolute;
+    left: 37%;
+    writing-mode:vertical-rl;
+   background-color: rgb(19, 64, 135);
+   color: #fff;
+   padding: 2px;
+   font-weight: 600;
+}
+.flex-sign{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+   color: rgb(20, 70, 153);
+}
+.instruction{
+    text-align: center;
+}
+@media (max-width:500px) {
+    .blockchain-logo{
+    height: 50px;
+}
+    .canvas_div_pdf {
+  width: 700px;
+height: 650px;
+
+}
+.bg-container {
+  background-color: rgb(20, 70, 153);
+  width: 350px;
+  height: 600px;
+  
+}
+.cert-badge{
+   left:202px; 
+}
+}

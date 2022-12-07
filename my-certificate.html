@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain brokerage certificate dashboard</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/my_certificate.css" />
+        <link rel="stylesheet" href="css/button.css">
+    <script src="javascript/check_login.js"></script>
+        <script src="javascript/handle_nav.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="harmburger_container" id="harmburger_container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </div>
+      <!-- <div></div>
+      <div></div>
+      <div></div> -->
+
+      <div id="google_translate_element"></div>
+
+      <div class="user_details container">
+        <div class="user_icon_drop_low_btn">
+          <div>
+            <img
+              src="css/assets/user.png"
+              alt=""
+              class="user_icon"
+              id="user_icon"
+            />
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+       <div class="box-container hide" id="box-container">
+        <div><a href="profile.html">My Profile</a></div>
+           <div><a id="logout" >Logout</a></div>
+      </div>
+
+        </div>
+
+        <div class="user_name_container">
+          <a class="user_name_txt" id="user_name_txt"></a>
+        </div>
+
+      </div>
+    </header>
+
+    <nav class="hide">
+      <div class="main_user image_container">
+        <img
+          src="css/assets/user.png"
+          alt=""
+          class="user_icon_main"
+          id="user_icon"
+        />
+      </div>
+
+      <div class="hide_container">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-x-octagon" viewBox="0 0 16 16">
+  <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+      </div>
+
+      <div class="db-nav-lin-container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          fill="#081336"
+          class="bi bi-house-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+          />
+        </svg>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+
+      <div class="nav_link_container">
+        <img src="css/assets/certificate.png" class="certificate_icon" alt="" />
+        <a href="my-certificate.html">My certificate</a>
+      </div>
+
+      <div class="nav_link_container">
+        <img
+          src="css/assets/my_certificate.png"
+          class="certificate_icon"
+          alt=""
+        />
+        <a href="buy-certificate.html">Buy certificate</a>
+      </div>
+
+      <div class="nav_link_container">
+        <img
+          src="css/assets/affiliate-marketing.png"
+          class="certificate_icon"
+          alt=""
+        />
+        <a href="deposit.html">Deposit fund</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main_body_container">
+
+
+         <!-- <div class="card balance_container" style="background-color:#081336;color:#fff">
+          <div>
+            <b><p>Available Balance:</p></b>
+            <p class="bal"><b>$0.0</b</p>
+          </div>
+
+          <div>
+            <img src="css/assets/wallet.png" alt="balance" class="balance_icon" />
+          </div>
+        </div> -->
+         
+
+        <div class="card balance_container ">
+          <div>
+            <p>Issued certificates:</p>
+            <b><p class="bal" id="bal">0</p></b>
+            <button id="download_all">Download All</button>
+          </div>
+
+          <div>
+            <img src="css/assets/certificate.png" alt="certificate" class="balance_icon" />
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="buy_cert tag" id="buy_cert_tag">
+<div class="certificate_details head">
+  <div style="margin-left: 5px;">certificate ID</div>
+<div>Date Requested</div>
+<!-- <div>certificate Number</div> -->
+<div>certificate Type</div>
+<div>State</div>
+<div>Status</div>
+<div>Download Certificate</div>
+</div>
+
+
+<!-- <div class="certificate_details tail">
+  <div>certificate ID</div>
+<div>Date Requested</div>
+
+<div>certificate Type</div>
+<div class="state-txt">State</div>
+<div class="status-txt">Status</div>
+</div> -->
+
+ <!-- <label
+          class="errMessage"
+          id="errMessage"
+          style="color: red; margin: 10px;text-align: center;"
+        ></label> -->
+
+
+
+      </div>
+
+            
+
+     
+
+
+    </main>
+
+    <script src="javascript/my_certificate.js"></script>
+    <script src="javascript/fetch-certificate-my-certificat.js"></script>
+    <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

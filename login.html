@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Sign In to your account to access your brokerage certificate or get a new one</title>
+<meta name="description" content="Sign In to your account to access your brokerage certificate or get a new one">
+<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+<script src="javascript/check-server.js"></script>
+
+<link rel="stylesheet" href="css/register.css">
+
+<body>
+<div class="main">
+<section class="signup">
+
+<div class="container">
+<div class="signup-content">
+<form method="POST" id="signup-form" class="signup-form">
+<h2 class="form-title">Login to your account</h2>
+<!-- <div class="form-group">
+<input type="text" class="form-input" name="name" id="name" placeholder="Your Name" />
+</div> -->
+<div class="form-group">
+<input type="email" class="form-input" name="email" id="email" placeholder="Your Email" />
+</div>
+<div class="form-group">
+<input type="password" class="form-input" name="password" id="password" placeholder="Password" />
+<span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+
+</div>
+ <label class="errMessage" id="errMessage" style="color: red;">  </label>
+
+<!-- <div class="form-group">
+<input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repeat your password" />
+</div> -->
+
+<div class="form-group">
+<input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+<label for="agree-term" class="label-agree-term"><span><span></span></span>Remember me </label>
+
+              
+</div>
+<div class="form-group">
+
+<input type="submit" name="submit" id="submit" class="form-submit" value="Sign In" />
+</div>
+<a href="recover-password.html">Forgotten Password</a>
+</form>
+<p class="loginhere">
+dont have an account ? <a href="register.html" class="loginhere-link">Register</a>
+</p>
+</div>
+</div>
+</section>
+</div>
+<script src="javascript/login.js"></script>
+<!-- <script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script> -->
+<!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73c1acbf5932d0c9","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+<script>
+  document.querySelector("#submit").onclick=()=>{
+    event.preventDefault()
+window.location.href="/dashboard.html"}
+</script> -->
+</body>
+</html>
