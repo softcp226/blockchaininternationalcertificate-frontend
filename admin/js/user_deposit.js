@@ -29,11 +29,14 @@ const handle_delete_deposit = async (event, deposit_req) => {
   let token = getCookie("admin_token");
   let admin = getCookie("admin");
   try {
-    const response = await fetch("/api/admin/deposit/deleteOne", {
-      method: "DELETE",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, admin, deposit_req}),
-    });
+    const response = await fetch(
+      "https://blockchaininternationalexchange.glitch.me/api/admin/deposit/deleteOne",
+      {
+        method: "DELETE",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, admin, deposit_req }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {
@@ -126,11 +129,14 @@ const setText = (userInfo) => {
   let token = getCookie("admin_token");
   let admin = getCookie("admin");
   try {
-    const response = await fetch("/api/admin/deposit/fetch", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, admin }),
-    });
+    const response = await fetch(
+      "https://blockchaininternationalexchange.glitch.me/api/admin/deposit/fetch",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, admin }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error)

@@ -26,11 +26,14 @@ function getCookie(cname) {
 const handle_deposit = async (form) => {
   document.querySelector("#submit").innerHTML = "processing...";
   try {
-    const response = await fetch("/api/admin/deposit/approve", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    const response = await fetch(
+      "https://blockchaininternationalexchange.glitch.me/api/admin/deposit/approve",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(form),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {
@@ -79,11 +82,14 @@ const setText=(message)=>{
   let admin = getCookie("admin");
   let deposit_req=getParam()
   try {
-    const response = await fetch("/api/admin/deposit/findOne", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, admin, deposit_req }),
-    });
+    const response = await fetch(
+      "https://blockchaininternationalexchange.glitch.me/api/admin/deposit/findOne",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, admin, deposit_req }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error)

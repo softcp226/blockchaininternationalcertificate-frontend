@@ -29,11 +29,14 @@ const handle_approve_certificate = async (event, certificate_ID) => {
   let token = getCookie("admin_token");
   let admin = getCookie("admin");
   try {
-    const response = await fetch("/api/requested_certificate/update/approve", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, admin, certificate_ID }),
-    });
+    const response = await fetch(
+      "https://blockchaininternationalexchange.glitch.me/api/requested_certificate/update/approve",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, admin, certificate_ID }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {
@@ -59,11 +62,14 @@ const handle_decline_certificate = async (event, certificate_ID) => {
 
   // alert(certificate_ID);
   try {
-    const response = await fetch("/api/requested_certificate/update/decline", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, admin, certificate_ID }),
-    });
+    const response = await fetch(
+      "https://blockchaininternationalexchange.glitch.me/api/requested_certificate/update/decline",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, admin, certificate_ID }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {
@@ -178,11 +184,14 @@ const setText = (userInfo) => {
   let token = getCookie("admin_token");
   let admin = getCookie("admin");
   try {
-    const response = await fetch("/api/admin/certificate/fetch", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, admin }),
-    });
+    const response = await fetch(
+      "https://blockchaininternationalexchange.glitch.me/api/admin/certificate/fetch",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, admin }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error)
