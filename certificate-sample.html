@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate in pdf</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <!-- <link rel="stylesheet" href="css/certificate.css" /> -->
+
+</head>
+<body>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+        body {
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .canvas_div_pdf {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: white;
+        }
+
+        .bg-container {
+            background-color: rgb(20, 70, 153);
+            width: 40%;
+            height: 100vh;
+
+        }
+
+        .no-bg-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .tt-sm-container {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            top: 10%;
+            position: relative;
+        }
+
+        .blockchain-logo {
+            height: 100px;
+        }
+
+        .tt-txt-sm {
+            font-weight: 500;
+            color: #fff;
+            line-height: 0px;
+        }
+
+        .tt-txt-sm-b {
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .btc-sm-bg {
+
+
+            width: 85%;
+        }
+
+        .btc-sm-bg-container {
+            text-align: center;
+            position: relative;
+            top: 20%;
+        }
+
+        .cert-badge {
+            position: absolute;
+            left: 37%;
+            writing-mode: vertical-rl;
+            background-color: rgb(19, 64, 135);
+            color: #fff;
+            padding: 2px;
+            font-weight: 600;
+        }
+
+        .flex-sign {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            color: rgb(20, 70, 153);
+        }
+
+        .instruction {
+            text-align: center;
+        }
+
+        @media (max-width:500px) {
+            .blockchain-logo {
+                height: 50px;
+            }
+
+            .canvas_div_pdf {
+                width: 700px;
+                height: 650px;
+
+            }
+
+            .bg-container {
+                background-color: rgb(20, 70, 153);
+                width: 350px;
+                height: 600px;
+
+            }
+
+            .cert-badge {
+                left: 202px;
+            }
+        }
+    </style>
+
+    <div class="canvas_div_pdf">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!--Add HTML content you want to convert to PDF-->
+        <div class="bg-container">
+            <div class="tt-sm-container">
+                <img src="https://blockchaininternationalexchange.com/css/assets/blockchain-logo.png" class="blockchain-logo" alt="" />
+                <div>
+                    <p class="tt-txt-sm">BLOCKCHAIN</p>
+                    <p class="tt-txt-sm-b">IBM COUNCIL</p>
+                </div>
+            </div>
+
+            <div class="btc-sm-bg-container">
+                <img src="https://blockchaininternationalexchange.com/css/assets/7252391.png" alt="btc-sm-bg" class="btc-sm-bg" />
+            </div>
+        </div>
+        <!-- <p class="cert-badge">Certified</p> -->
+       
+
+        <div class="no-bg-container">
+            <h1>CERTIFIED BLOCKCHAIN BROKERAGE</h1>
+            <p>This is to acknowledge that</p>
+            <h1 id="username" class="username" style="color:green; font-size: 20px;">MOHAMMED</h1>
+            <p>has successfully completed all requirements for</p>
+            <h1><b class="type" id="certificate_type" style="color: #0c0e28;">BASIC</b> BLOCKCHAIN BROKERAGE</h1>
+            <p>
+                certification through verification and brokerage subscription
+                administerd by
+            </p>
+            <h3>BLOCKCHAIN BUSINESS INSTITUTE"</h3>
+
+            <div class="flex-sign">
+                <div>
+                    <p style="font-size:14px ;" id="certificate_ID">Certificate ID: #49648757374</p>
+                    <p style="float:left ;" id="issue_date">Issued on:13/12/2022</p>
+                </div>
+                <div>
+                    <em>Arvind Krishna</em>
+                    <p>Executive Director</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="javascript/certificate.js"></script> -->
+</body>
+</html>
