@@ -58,7 +58,7 @@ const setCertText = (result) => {
   const token = getCookie("token");
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/user/certificate/fetch",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/user/certificate/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

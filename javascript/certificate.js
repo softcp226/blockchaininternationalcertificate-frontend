@@ -46,28 +46,26 @@ function getPDF() {
 
 const certificate_type = (certificate) => {
   switch (certificate) {
-    case "basic yield certificate":
-      return "Basic";
+    case "Bronze yield certificate":
+      return "Bronze";
       break;
 
-    case "premium yield certificate":
-      return "Premium";
+    case "Silver yield certificate":
+      return "Silver";
       break;
 
-    case "standard yield certificate":
-      return "standard";
+    case "Gold yield certificate":
+      return "Gold";
       break;
 
-    case "premium yield certificate":
-      return "Premium";
+    case "Diamond Yield Certificate":
+      return "Diamond";
       break;
 
-    case "enterprise yield certificate":
-      return "enterprise";
-      break;
+  
 
     default:
-      return "Basic";
+      return "Silver";
       break;
   }
 };
@@ -137,7 +135,7 @@ const getCookie = (cname) => {
   certificate_ID = getParam();
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/user/certificate/fetchOne",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/user/certificate/fetchOne",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

@@ -10,7 +10,7 @@ const handle_submit_deposit_proof = async (form) => {
   document.querySelector("#submit").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/user/deposit/proof/submit",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/user/deposit/proof/submit",
       {
         method: "POST",
         //   headers: { "content-type": "application/json" },

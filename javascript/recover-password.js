@@ -3,7 +3,7 @@ const handle_formSubmit = async (Email) => {
   document.querySelector("#submit").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/user/password/recover",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/user/password/recover",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

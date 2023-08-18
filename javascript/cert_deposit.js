@@ -18,7 +18,7 @@ const getParam = () => {
   certificate_ID = getParam();
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/user/certificate/fetch/search_byid",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/user/certificate/fetch/search_byid",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

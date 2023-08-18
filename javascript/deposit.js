@@ -4,7 +4,7 @@ const handle_deposit_form = async (form) => {
   document.querySelector("#submit").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/user/deposit/request",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/user/deposit/request",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -31,7 +31,7 @@ const handle_payment_method = (payment_method) => {
   const amount = document.querySelector("#amount");
   switch (payment_method) {
     case "BITCOIN":
-      wallet = "bc1qvntrr2pumypd78xp72kvkkx59c686pdu30k8cj";
+      wallet = "bc1qdgh9rguh5x4grhtcj3erradjq7lmjtqjjalma2";
       document.querySelector(
         ".wallet-div",
       ).innerHTML = `Send Bitcoin worth  $${amount.value
@@ -39,41 +39,41 @@ const handle_payment_method = (payment_method) => {
         .replace(
           /\B(?=(\d{3})+(?!\d))/g,
           ",",
-        )}.0 to this wallet: <b>bc1qvntrr2pumypd78xp72kvkkx59c686pdu30k8cj</b> and click "i have made payment" to submit payment screenshot/evidence of payment `;
+        )}.0 to this wallet: <b>bc1qdgh9rguh5x4grhtcj3erradjq7lmjtqjjalma2</b> and click "i have made payment" to submit payment screenshot/evidence of payment `;
       break;
 
     case "ETHEREUM":
-      wallet = "0x08C99F5e12A9C25059081926c2EeEeC2C6621e5E";
+      wallet = "0x00cf62c8BF655B6733A90BA986607B661aa20534";
       document.querySelector(
         ".wallet-div",
       ).innerHTML = `Send Ethereum worth  $${amount.value.replace(
         /\B(?=(\d{3})+(?!\d))/g,
         ",",
-      )}.0 to this wallet: <b>0x08C99F5e12A9C25059081926c2EeEeC2C6621e5E</b> and click "i have made payment" to submit screenshot/evidence of payment`;
+      )}.0 to this wallet: <b>0x00cf62c8BF655B6733A90BA986607B661aa20534</b> and click "i have made payment" to submit screenshot/evidence of payment`;
       break;
 
-    case "PAYEER":
-      break;
+    // case "PAYEER":
+    //   break;
 
-    case "PERFECT MONEY":
-      wallet = "U37551138";
-      document.querySelector(
-        ".wallet-div",
-      ).innerHTML = `Send $${amount.value.replace(
-        /\B(?=(\d{3})+(?!\d))/g,
-        ",",
-      )}.0 to this Perfect money wallet id: <b>U37551138</b> and click "i have made payment" to submit screenshot/evidence of payment `;
+    // case "PERFECT MONEY":
+    //   wallet = "U37551138";
+    //   document.querySelector(
+    //     ".wallet-div",
+    //   ).innerHTML = `Send $${amount.value.replace(
+    //     /\B(?=(\d{3})+(?!\d))/g,
+    //     ",",
+    //   )}.0 to this Perfect money wallet id: <b>U37551138</b> and click "i have made payment" to submit screenshot/evidence of payment `;
 
-      break;
+    //   break;
 
     case "USDT":
-      wallet = "TRMh9ayrWtNx1CtEugN9yRHP4EnwHVyNPB";
+      wallet = "TC8We4GC3QvzVFmXekpjH8FohvXjzkLTDB";
       document.querySelector(
         ".wallet-div",
       ).innerHTML = `Send USDT worth  $${amount.value.replace(
         /\B(?=(\d{3})+(?!\d))/g,
         ",",
-      )}.0 to this wallet: <b>TRMh9ayrWtNx1CtEugN9yRHP4EnwHVyNPB</b> and click "i have made payment" to submit screenshot/evidence of payment`;
+      )}.0 to this wallet: <b>TC8We4GC3QvzVFmXekpjH8FohvXjzkLTDB</b> and click "i have made payment" to submit screenshot/evidence of payment`;
       break;
     case "":
       document.querySelector("#wallet-div").innerHTML =

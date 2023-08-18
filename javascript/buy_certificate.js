@@ -2,30 +2,30 @@ let amount = 0;
 
 const handle_certificate_type = (certificate_type) => {
   switch (certificate_type) {
-    case "basic yield certificate":
-      amount = 275;
-      document.querySelector(".amt").innerHTML = `Amount:$275`;
+    case "Bronze yield certificate":
+      amount = 400 ;
+      document.querySelector(".amt").innerHTML = `Amount:$400`;
       break;
 
-    case "premium yield certificate":
+    case "Silver yield certificate":
       amount = 850;
       document.querySelector(".amt").innerHTML = `Amount:$850`;
       break;
 
-    case "standard yield certificate":
-      amount = 1250;
-      document.querySelector(".amt").innerHTML = `Amount:$1,250`;
+    case "Gold yield certificate":
+      amount = 1500;
+      document.querySelector(".amt").innerHTML = `Amount:$1,500`;
       break;
 
-    case "enterprise yield certificate":
-      amount = 3250;
-      document.querySelector(".amt").innerHTML = `Amount:$3,250`;
+    case "Diamond Yield Certificate":
+      amount = 3500;
+      document.querySelector(".amt").innerHTML = `Amount:$3,500`;
       break;
 
-    case "ultimate yield certificate":
-      amount = 7250;
-      document.querySelector(".amt").innerHTML = `Amount:$7,250`;
-      break;
+    // case "ultimate yield certificate":
+    //   amount = 7250;
+    //   document.querySelector(".amt").innerHTML = `Amount:$7,250`;
+    //   break;
 
     default:
       document.querySelector(
@@ -41,7 +41,7 @@ const handle_submit_form = async (form) => {
   document.querySelector("#submit").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/user/buy_certificate",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/user/buy_certificate",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
