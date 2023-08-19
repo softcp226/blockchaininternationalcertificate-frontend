@@ -30,7 +30,7 @@ const handle_delete_user = async (event, user_id) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/user/delete",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/user/delete",
       {
         method: "DELETE",
         headers: { "content-type": "application/json" },
@@ -108,7 +108,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/users/fetch",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/users/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

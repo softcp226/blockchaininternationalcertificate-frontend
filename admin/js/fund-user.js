@@ -27,7 +27,7 @@ const handle_deposit = async (form) => {
   document.querySelector("#submit").innerHTML = "processing...";
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/fund_user",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/fund_user",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

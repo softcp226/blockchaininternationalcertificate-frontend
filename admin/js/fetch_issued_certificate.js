@@ -23,7 +23,7 @@ const handle_activate_deativate_certificate = async (event, certificate_ID) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/issued_certificate/update/activate-deactivate",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/issued_certificate/update/activate-deactivate",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -56,7 +56,7 @@ const handle_suspend_unsuspend_certificate = async (event, certificate_ID) => {
   // alert(certificate_ID);
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/issued_certificate/update/suspend-unsuspend",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/issued_certificate/update/suspend-unsuspend",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -159,7 +159,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/issued_certificate/fetch",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/issued_certificate/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

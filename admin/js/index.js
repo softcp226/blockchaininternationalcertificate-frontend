@@ -16,7 +16,7 @@ const handle_admin_login = async (form) => {
   document.querySelector("#submit").innerHTML = "proccessing...";
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/login",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/login",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

@@ -30,7 +30,7 @@ const handle_delete_deposit = async (event, deposit_req) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/deposit/deleteOne",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/deposit/deleteOne",
       {
         method: "DELETE",
         headers: { "content-type": "application/json" },
@@ -130,7 +130,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/deposit/fetch",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/deposit/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

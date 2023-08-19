@@ -58,7 +58,7 @@ const handle_submit_form = async (form) => {
   document.querySelector("#submit").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://blockchaininternationalexchange.glitch.me/api/admin/certificate/issue",
+      "https://blockchaininternationalcertificate-backend.glitch.me/api/admin/certificate/issue",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
