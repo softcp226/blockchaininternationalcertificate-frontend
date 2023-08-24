@@ -121,21 +121,21 @@ document.querySelector("#submit").onclick = () => {
   });
 };
 
-document.querySelector("#pay").onclick = () => {
-  // const payment_method = document.querySelector("#payment_method");
-  // if (!payment_method.value) return show_input_error(payment_method);
+// document.querySelector("#pay").onclick = () => {
+//   // const payment_method = document.querySelector("#payment_method");
+//   // if (!payment_method.value) return show_input_error(payment_method);
 
-  const token = getCookie("token");
-  const user = getCookie("user");
+//   const token = getCookie("token");
+//   const user = getCookie("user");
 
-  handle_pay_with_available_balance({
-    token,
-    user,
-    // payment_method: payment_method.value,
-    certificate: certificate_ID,
-    amount,
-  });
-};
+//   handle_pay_with_available_balance({
+//     token,
+//     user,
+//     // payment_method: payment_method.value,
+//     certificate: certificate_ID,
+//     amount,
+//   });
+// };
 
 
 document.querySelector("#payment_method").onchange = () => {
